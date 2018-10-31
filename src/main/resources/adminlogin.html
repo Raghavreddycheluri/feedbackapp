@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<br><br><title> ADMIN LOGIN </title>
+</head>
+<h1 style="text-align: center"> ADMIN LOGIN  </h1>	
+<body background="C:\Users\LABUser11\Desktop\feedbackapp\src\main\resources\fujitsu.jpg">
+<body >
+<br><br><br><br><br>
+<form name="loginForm" method="post" >
+<center><table>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 id="username" placeholder="please enter username"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 id="password" placeholder="please enter password"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+<td ><input type="Reset"></td> 
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+</table>
+</center>
+</form>
+<font color:"#F0FFFF" size = "6" face="century gothic">
+<marquee >Your valuable feedback matters to us.......</marquee>
+<script >
+function check(form)
+{
+
+if(form.username.value == "admin" && form.password.value == "1234")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
+</html>
